@@ -17,3 +17,63 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: #aaa;
 }
+
+td:nth-child(3) {
+    background-color: darkblue;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead tr:first-child {
+    background-color: brown;
+}
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 10px;
+    color: #444;
+}
+
+.nav-link.active{
+    font-style: italic;
+}
+
+h2~p {
+    color:cyan;
+}
+
+h3+p {
+    color: darkorange;
+}
+
+article:not(.agotado) {
+    width: 300px;
+    box-shadow: 0px 0px 8px #888;
+}
+
+article :not(h4) {
+    font-style: italic;
+}
