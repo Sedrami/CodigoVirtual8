@@ -1,0 +1,89 @@
+:root{
+    --color-primario: #c3372a;
+    --color-secundario: rgb(109, 245, 238);
+    --color-transparente: rgba(120,14,34,0.5);
+}
+
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+h1{
+    color: var(--color-primario);
+    background-color: #ddd;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+
+}
+
+.form-control{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 8px 8px 8px 30px;
+    border: 1px dashed #f17469;
+    border-bottom: 3px solid var(--color-primario);
+    background-image: url(../ImagenesGlobal/id.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+     background-size: 24px 24px;
+     border-radius: 5px;
+}
+
+.form-control:focus{
+    background-image: url(./../imagenesglobal/id2.png);
+}
+
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--color-secundario);
+}
+
+.seccion1{
+    background-color: var(--color-primario);
+    height: 60px;
+    width: 50%;
+}
+
+.articulo1{
+    background-color: var(--color-secundario);
+    height: 30px;
+    width: 50%;
+}
+
+.parrafo1{
+    width: 200px;
+    height: 100px;
+    background-color: #ddd;
+    overflow: auto;
+}
+
+.parrafo1::-webkit-scrollbar{
+    width: 10px;
+}
+
+.parrafo1::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.parrafo1::-webkit-scrollbar-track{
+    background-color: #aa4433;
+}
+
+.badge-rojo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(153, 37, 37);
+}
+
+.imagen{
+    border-radius: 10px;
+    width: 150px;
+    overflow: hidden;
+}
