@@ -1,0 +1,123 @@
+body {
+    background-color: #333;
+    color:#eee;
+}
+
+@font-face {
+    font-family: "mi primera fuente";
+    src: url("../Fuentesglobales/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "mi fuente medium";
+    src: url(../Fuentesglobales/DancingScript-Medium.ttf);
+}
+
+@font-face {
+    font-family: "mi fuente bold";
+    src: url(../Fuentesglobales/DancingScript-Bold.ttf);
+}
+
+h1, h2{
+    font-family:"mi primera fuente";
+    color: blueviolet;
+}
+
+.descripcion{
+    font-family: "mi primera medium";
+    font-size: 12px;
+    width: 200px;
+    height: 80px;
+    overflow: scroll;
+}
+
+.segundo__titulo{
+    font-family: "mi fuente bold";
+}
+
+.fuente_link{
+    font-family: 'Kdam Thmor', cursive;
+}
+
+.fuente_link::first-letter{
+    font-size: 72px;
+}
+
+a{
+    font-family: "mi Primera fuente";
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #c00;
+}
+
+.portada__agumon{
+    background-image: url(../imagenesglobal/montañas.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alto__total{
+    height: 100vh;
+}
+
+.tercer__titulo{
+    font: 42px "mi fuente medium";
+}
+
+.tercer__parrafo{
+    font: 16px "mi fuente medium";
+    border: 1px solid #c00;
+    background: linear-gradient(90deg, #1a98EF, #ea1aed, #fffD28);
+}
+.btn_iniciar_session{
+    margin-top: 30px;
+    font-family: "miFuenteLowe";
+    background: -webkit-linear-gradient(right, #1A98EF, #EF1AED, #FFFD28);
+    border: none;
+    color: #fff;
+}
+
+.cuarto__parrafo{
+    margin-top: 30px;
+    font-family: "MiPrimeraFuente";
+    font-size: 16px;
+    border: 1px solid purple;
+    background: -webkit-radial-gradient(center, circle, #ff732B, );
+}
+
+.primera_imagen{
+    filter:brightness(5)
+}
+
+.segunda_imagen{
+    filter: grayscale(1);
+}
+
+.tercera_imagen{
+    filter: sepia(1);
+}
+
+.cuarta_imagen{
+    filter: blur(10px);
+}
+
+.quinta_imagen{
+    filter: invert(1);
+}
+
+.sexta_imagen{
+    filter: saturate(10);
+}
+
+.septima_imagen{
+    filter: contrast(0.5);
+}

@@ -50,15 +50,30 @@ nav li {
     display: inline-block;
 }
 
-.nav-link {
+.youtube{
+    font-family: "mi Primera fuente";
+    background-color: #c00;
+    color: #fff;
     text-decoration: none;
-    font-family: sans-serif;
-    margin-right: 10px;
-    color: #444;
+    padding: 8px;
+    border-radius: 6px;
 }
 
-.nav-link.active{
-    font-style: italic;
+.facebook{
+    font-family: "mi Primera fuente";
+    background-color: rgb(56, 16, 233);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.instagram{
+    background: -webkit-linear-gradient(right, #1A98EF, #EF1AED, #FFFD28);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
 }
 
 h2~p {
