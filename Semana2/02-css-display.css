@@ -1,0 +1,41 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+body{
+    
+    background-image: linear-gradient(to top right,#222,#bbb);
+    min-height: 100vh;
+    
+}
+
+header{
+    height: 60px;
+    box-shadow: 0px,0px,#bbb;
+}
+
+.color-primario{
+    color: chartreuse;
+}
+
+.navegacion{
+    display: none;
+}
+
+aside{
+    height: calc(100vh - 60px);
+    background-color: magenta;
+    width: 240px;
+}
+
+section, aside{
+    display: inline-block;
+}
+
+section{
+    background-color: rgb(62, 82, 133);
+    width: calc(100% - 240px);
+    height: calc(100vh - 60px);
+}
