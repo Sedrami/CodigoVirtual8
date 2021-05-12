@@ -4,6 +4,11 @@ box-sizing:border-box;
 padding:0;
 }
 
+html{
+    /* Propiedad para que los link internos de una pagina hagan el scroll con aceleracion */
+    scroll-behavior:smooth;
+}
+
 body{
     min-height: 100hv;
     background-color: #333;
@@ -44,6 +49,7 @@ body{
     margin-top: 20px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .card span{
@@ -56,4 +62,36 @@ body{
     color: white;
     border-radius: 50%;
     font-size: 0.7rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.card img{
+    transition: all 0.3s ease;
+}
+
+.card:hover img{
+    filter: blur(2px);
+}
+
+.card:hover span{
+    top: 50%;
+    right: 50%;
+    /* cuando usamas trandform:traslate, si las medidas estan en porcentaje, dicho porcentaje se basan en referenecia al ancho y alto del mismo elemento */
+    transform: translate(50%, -50%);
+}
+
+.boton-fixed{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.boton-fixed a{
+    color: #eee;
 }
