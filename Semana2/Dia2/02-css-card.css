@@ -5,16 +5,10 @@ padding:0;
 }
 
 body{
-    min-height: 100vh;
-    background-color: #ddd;
-}
-
-.card{
-    width: 400px;
-    height: 50px;
-    border-radius: 0px;
-    box-shadow: 0px 0px 10px #aaa;
-    margin: 100px -10 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
 
 .card__img{
@@ -26,11 +20,11 @@ body{
     border-radius: 50%;
     background-color: orangered;
     position: absolute;
-    left: 85%;
+    left: 82%;
     top: 5px;
     text-align: center;
     padding-top: 4px;
-    color: aliceblue;
+    color: #ddd;
 }
 
 .card__photos{
@@ -40,19 +34,15 @@ body{
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: white;
+    color: #bbb;
 }
 
 .card__NY{
-    height: 240px;
-}
-
-.card__title{
-    margin-left: 3.5rem;
+    height: 250px;
+    width: 300px;
 }
 
 .card__slogan{
-    margin-left: 3.5rem;
     color: rgb(192, 38, 11);
 }
 
@@ -62,4 +52,27 @@ body{
 
 .card__li{
     margin-left: 1.5rem;
+}
+
+
+
+.card{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    position: relative;
+    max-width: 300px;
+    height: 420px;
+    background-color: #fff;
+    margin: 30px 10px;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    height: 420px;
 }
