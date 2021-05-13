@@ -1,3 +1,7 @@
+:root{
+    --color-naranja: rgb(240, 80, 6);;
+}
+
 *{
 margin:0;
 box-sizing:border-box;
@@ -11,68 +15,111 @@ body{
     background-color: #fff;
 }
 
+.card{
+    width: 400px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #aaa;
+    margin: 100px auto 0 auto;
+}
+
 .card__img{
+    height: 400px;
+    background-color: aqua;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.car__img img{
+    position:relative;
+    left: -100px;
+    transition: all 0.3 ease;
+}
+
+.card__img .card__date{
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: var(--color-naranja);
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 9px;
+}
+
+.card__img .card__photos{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: var(--color-naranja);
+    color: white;
+    text-align: center;
+    z-index: 100;
+    padding: 8px 15px;
+}
+
+.card__info{
+    background-color: white;
+    height: 200px;
+    padding: 1.5rem;
+    transition: all 0,3s ease;
     position: relative;
 }
-.card__date{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: orangered;
-    position: absolute;
-    left: 82%;
-    top: 5px;
-    text-align: center;
-    padding-top: 4px;
-    color: #ddd;
+
+.card__info .card__title{
+    color: #444;
+    margin-bottom: 1rem;
 }
 
-.card__photos{
-    width: 60;
-    height: 20;
-    background-color: orangered;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #bbb;
+.card__info .card__slogan{
+    color: var(--color-naranja);
+    margin-bottom: 3rem;
 }
 
-.card__NY{
-    height: 250px;
-    width: 300px;
-}
-
-.card__slogan{
-    color: rgb(192, 38, 11);
+.card__info .card__description{
+    color: #666;
+    line-height: 2rem;
+    font-size: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .card__feed{
-    display: inline-flex;
+    position: absolute;
+    bottom: 2rem;
 }
 
-.card__li{
-    margin-left: 1.5rem;
+.card__info .card__feed li{
+    display: inline-block;
+    color: #aaa;
 }
 
-
-
-.card{
-    position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px;
-    position: relative;
-    max-width: 300px;
-    height: 420px;
-    background-color: #fff;
-    margin: 30px 10px;
-    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
+.card__info .card__feed li:first-child{
+    margin-right: 30px;
 }
 
-.card:hover{
-    height: 420px;
+.card:hover .card__img{
+    height: 300px;
+}
+
+.card:hover .card__img img{
+    filter: brightness(0.5);
+}
+
+.card:hover .card__info{
+    height: 300px;
+}
+
+.card:hover .card__description{
+    font-size: 1rem;
+    opacity: 1;
+    margin-bottom: 3rem;
+}
+
+.card:hover .card__slogan{
+    margin-bottom: 1rem;
 }
