@@ -1,4 +1,6 @@
 @font-face {
     font-family: "Ubuntu-Light";
     src: url(./Assets/fonts/Ubuntu-Light.ttf);
+    font-family: "Ubuntu-Bold";
+    src: url(./Assets/fonts/Ubuntu-Bold.ttf);
 }
