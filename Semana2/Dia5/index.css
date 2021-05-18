@@ -229,3 +229,57 @@ a{
 .footer h3{
     margin-bottom: 24px;
 }
+
+.menu__icon{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .menu:first-child{
+        flex-direction: column;
+    }
+
+    .menu:nth-child(2){
+        margin-bottom: auto;
+    }
+
+    .nav{
+        background-color: hsl(13, 100%, 72%);
+    }
+
+    .bg__content{
+        height: 60vh;
+        background-color: hsl(13, 100%, 72%);
+    }
+
+    .bg__container::before{
+        display: none;
+    }
+
+    .container__second{
+        display: block;
+        margin-top: 40px;
+    }
+
+    .title__second{
+        text-align: center;
+    }
+
+    .container__paragraph{
+        margin-left: 0;
+    }
+
+    .image__deskyop__right{
+        position: flex;
+        top: 70%;
+        transform: translateY(-85%);
+        left: 0;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .content__image{
+        display: flex;
+        justify-content: center;
+    }
+}
