@@ -1,15 +1,16 @@
 @import "variable";
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+@import "mixins";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $font-vietnam;
 }
 
 body{
     padding-top: 60px;
+    font-family: $font-vietnam;
 }
 
 ul{
@@ -53,3 +54,37 @@ a{
     }
 }
 
+.paragraph{
+    line-height: 1.8rem;
+    color: $color-gray-blue;
+}
+
+.hero{
+    @include flex-row();
+    flex-wrap: wrap;
+    max-width: $max-width;
+    margin: 0 auto;
+    > * {
+        width: 50%;
+    }
+    .hero__title{
+        h1{
+            font: {
+                size: 3rem;
+                weight: 700;
+            }
+            color:$color-dark-blue;
+            padding-right: 12rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            margin-bottom: 2rem;
+            padding-right: 50%;
+        }
+    }
+    .hero__figure{
+        img{
+            max-width: 100%;
+        }
+    }
+}
