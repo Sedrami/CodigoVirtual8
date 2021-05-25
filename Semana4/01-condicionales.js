@@ -56,7 +56,8 @@
  * a === b (si a es igual que b en valor y en tipo de dato)
  * a == b (si a es igual que b b en valor)
  * a !== b (si a es diferente que b)
- * Comparadores logicos
+ * /
+/** Comparadores logicos
  * a && b (si a y b son verdaderos)
  * a || b (si a y/o b son verdaderon)
  * !a (la negacion de a)
@@ -97,16 +98,37 @@
  * Ejercicios 3.6 pag. 61
  */
 
-let platos = 250;
-let total = 0;
-if (platos < 200) {
-    total = platos * 95;
-} else {
-    if (platos <= 300) {
-        total = platos * 85;
-    } else {
-        total = platos * 75;
-    }
-}
+// let platos = 250;
+// let total = 0;
+// if (platos < 200) {
+//     total = platos * 95;
+// } else {
+//     if (platos <= 300) {
+//         total = platos * 85;
+//     } else {
+//         total = platos * 75;
+//     }
+// }
 
-document.write(`Cantidad de plato: ${platos} <br> Total a pagar: ${total}`)
+// document.write(`Cantidad de plato: ${platos} <br> Total a pagar: ${total}`)
+
+/**
+ * Ejercicio 3.4 pag. 89
+ */
+
+// let horas = 6;
+// let total = 0;
+// if (horas <= 2) {
+//     total = horas * 5;
+// } else {
+//     if (horas <= 5){
+//         total = (2 * 5) + (horas - 2) * 4;
+//     } else {
+//         if (horas <= 10) {
+//             total = (2 * 5) + (3 * 4) + (horas - 5) * 3;
+//         } else {
+//             total = (2 * 5) + (3 * 4) + (5 * 3) + (horas - 10) * 2;
+//         }
+//     }
+// }
+// document.write(`Horas en el estacionamiento: ${horas} <br> Total a pagar: S/ ${total}`);
